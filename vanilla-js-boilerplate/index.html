@@ -14,11 +14,17 @@
         .container {
             background-image: url(assets/effect.gif);
             display: flex;
-            align-items: center;
-            justify-content: center;
+            padding: 20px;
             flex-direction: column;
             background-position: center;
             height: 100vh;
+        }
+
+        .container-2 {
+            height: fit-content;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         .image-container {
@@ -28,25 +34,27 @@
         }
 
         .image {
-            width: 50%;
+            width: 70%;
         }
 
         .text1 {
-            width: 40%;
+            width: 60%;
         }
         .text2 {
-            width: 40%;
+            width: 60%;
         }
     </style>
 </head>
 
 <body>
     <div class="container">
-        <img src="assets/text1.png" alt="" class="text1">
-        <div class="image-container">
-            <img src="assets/img1.png" alt="" class="image">
+        <div class="container-2">
+            <img src="assets/text1.png" alt="" class="text1">
+            <div class="image-container">
+                <img src="assets/img1.png" alt="" class="image">
+            </div>
+            <img src="assets/text2.png" alt="" class="text2">
         </div>
-        <img src="assets/text2.png" alt="" class="text2">
     </div>
 </body>
 </html>
